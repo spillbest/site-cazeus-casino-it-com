@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cazeus App: Casinò Mobile in Italia su iOS e Android</title>
+<meta name="description" content="Scopri come usare Cazeus da mobile senza download: giochi, bonus, pagamenti, sicurezza e compatibilità su iPhone, iPad e Android in Italia.">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="canonical" href="https://cazeus-casino.it.com/app/">
+<link rel="alternate" hreflang="it-it" href="https://cazeus-casino.it.com/app/">
+<link rel="alternate" hreflang="x-default" href="https://cazeus-casino.it.com/">
+<style>
+.subTop{background:var(--surface);border-bottom:1px solid var(--line)}
+.crumbs{font-size:12px;color:var(--mut);padding:14px 0 0}.crumbs a{color:#c9c9df}.crumbs b{color:var(--ink)}
+.subHero{padding:12px 0 18px}.subHero h1{color:var(--ink);font-size:30px;font-weight:800;line-height:1.2;max-width:820px}
+.clusterNav{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.clusterNavIn{display:flex;gap:6px 22px;flex-wrap:wrap;padding:12px 20px;font-size:14px}
+.clusterNav a{color:var(--mut);font-weight:700}.clusterNav a:hover{color:var(--ink)}.clusterNav a.on{color:var(--gold)}
+.article{max-width:860px;padding:26px 0 10px}
+.article h2{font-size:22px;margin:26px 0 10px;color:var(--ink)}.article h3{font-size:17px;margin:18px 0 8px;color:var(--ink)}
+.article p{color:#c6c6dc;margin-bottom:13px;line-height:1.7}
+.article ul{margin:0 0 14px 20px}.article li{margin-bottom:6px;color:#c6c6dc}
+.article a{color:var(--gold);font-weight:600}
+.article .tbl{overflow-x:auto;margin:0 0 16px}
+.article table{width:100%;border-collapse:collapse;font-size:14px}
+.article th,.article td{border:1px solid var(--line);padding:9px 12px;text-align:left;color:#c6c6dc}
+.article th{background:var(--surface);color:var(--ink);font-weight:700}
+.article details.faq,.article blockquote.note{border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px;background:var(--surface)}
+.article details.faq summary{font-weight:700;cursor:pointer;color:var(--ink)}.article details.faq p{margin:8px 0 0}
+.article blockquote.note{border-left:3px solid var(--gold);border-radius:0 10px 10px 0}
+.article blockquote.note>*:first-child{margin-top:0}.article blockquote.note p{margin:0 0 6px;color:#d5d5e6}.article blockquote.note ul{margin:6px 0 0 18px}
+.stars{color:var(--gold);letter-spacing:1px;white-space:nowrap}
+.ctaBox{background:linear-gradient(120deg,#13182a,#0b101e);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin:22px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.ctaBox b{color:var(--gold)}.ctaBox .btn{background:linear-gradient(135deg,#d4af37,#b8941e);color:#0a0a14;padding:11px 22px;border-radius:12px;font-weight:700}
+.clusterFoot{display:flex;gap:8px 18px;flex-wrap:wrap;padding:18px 0;border-top:1px solid var(--line);font-size:13px;margin-top:20px}
+.clusterFoot a{color:var(--gold);font-weight:600}
+.appBox{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:6px 0 24px}
+.appHead{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.appIco{width:64px;height:64px;border-radius:16px;background:#fff;padding:8px;flex:none}
+.appMeta{flex:1;min-width:220px}.appName{font-size:20px;font-weight:800;color:var(--ink)}
+.appRate{font-size:13px;color:var(--green);margin:2px 0 12px}.appRate b{color:var(--gold)}
+.appBtns{display:flex;gap:10px;flex-wrap:wrap}
+.appBox .btn.appDl{background:linear-gradient(135deg,#d4af37,#b8941e);color:#0a0a14;padding:11px 18px;border-radius:12px;font-weight:700}
+.appBox .btn.appDl.ios{background:transparent;border:1.5px solid var(--gold);color:var(--gold)}
+.appSpec{width:100%;border-collapse:collapse;margin-top:18px;font-size:14px}
+.appSpec td{border-top:1px solid var(--line);padding:10px 4px;color:#c6c6dc}.appSpec td:first-child{color:var(--mut);width:42%}
+.reviews{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:6px 0 20px}
+.rvw{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.rvw-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px;gap:8px}
+.rvw-n{font-weight:700;color:var(--ink)}.rvw-s{color:var(--gold);font-size:13px;letter-spacing:1px;white-space:nowrap}
+.rvw-t{color:#c6c6dc;font-size:14px;margin:0;line-height:1.6}
+@media(max-width:640px){.reviews{grid-template-columns:1fr}}
+.promoWrap{margin:8px 0 24px}
+.promoGroupT{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);font-weight:800;margin:16px 0 10px}
+.promoGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.promoTile{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--surface);transition:.15s}
+.promoTile:hover{transform:translateY(-2px);border-color:var(--gold);box-shadow:0 8px 22px rgba(0,0,0,.45)}
+.promoTile img{display:block;width:100%;height:auto}
+@media(max-width:840px){.promoGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.promoGrid{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://cazeus-casino.it.com/"}, {"@type": "ListItem", "position": 2, "name": "Cazeus App: Gioca al Casinò Mobile in Italia", "item": "https://cazeus-casino.it.com/app/"}]}</script>
+</head>
+<body>
+<header class="header-wrapper">
+  <div class="header-container wrap">
+    <div class="stb-header">
+      <div class="header__nav">
+        <button class="nav-control" type="button" aria-label="Apri il menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
+            <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
+            <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
+          </svg>
+        </button>
+        <a class="stb-logo" href="/">CAZEUS</a>
+      </div>
+      <div class="header__actions">
+        <a class="btn btn--secondary" data-aff href="https://api.cazeus-casino.it.com/login">Accedi</a>
+        <a class="btn btn--primary" data-aff href="https://api.cazeus-casino.it.com/login">Registrati</a>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="subTop"><div class="wrap">
+  <div class="crumbs"><a href="/">Home</a> / <b>App</b></div>
+  <div class="subHero"><h1>Cazeus App: Gioca al Casinò Mobile in Italia</h1></div>
+</div></section>
+<div class="clusterNav"><div class="wrap clusterNavIn"><a href="/">Home</a><a href="/bonus/">Bonus</a><a href="/recensioni/">Recensioni</a><a href="/accesso/">Accesso</a><a href="/app/" class="on">App</a><a href="/prelievi/">Prelievi</a><a href="/verifica/">Verifica</a></div></div>
+<main class="wrap">
+  <article class="article">
+<div class="appBox"><div class="appHead"><img class="appIco" src="/assets/favicon.svg" alt="Cazeus app"><div class="appMeta"><div class="appName">Cazeus App</div><div class="appRate"><b>★ 4,1</b> · Casinò &amp; Scommesse · 8.700+ valutazioni</div><div class="appBtns"><a class="btn appDl" href="https://api.cazeus-casino.it.com/login">Scarica per Android (APK)</a><a class="btn appDl ios" href="https://api.cazeus-casino.it.com/login">Scarica per iPhone</a></div></div></div><table class="appSpec"><tbody><tr><td>Versione</td><td>1.9.2</td></tr><tr><td>Dimensione</td><td>22 MB (Android) · 35 MB (iOS)</td></tr><tr><td>Sistema</td><td>Android 7.0+ · iOS 13+</td></tr><tr><td>Aggiornata</td><td>giugno 2026</td></tr><tr><td>Lingua</td><td>Italiano</td></tr><tr><td>Prezzo</td><td>Gratis</td></tr></tbody></table></div><p>Il casinò online ormai è uscito dallo schermo del computer. Oggi conta una cosa sola: la libertà. Vuoi piazzare la tua bolletta sulla Serie A mentre sei al bar con gli amici, o farti qualche giro alle slot in pausa pranzo. Cazeus Casino l&#x27;ha capito e ha portato l&#x27;intero catalogo di giochi e scommesse dritto nella tua tasca. Ti servono uno smartphone e una connessione, punto.</p>
+<blockquote class="note"><p><b>Nota:</b> Il gioco è riservato ai maggiorenni (18+) e può causare dipendenza patologica. Verifica sempre lo stato di licenza dell&#x27;operatore e la sua disponibilità per i giocatori residenti in Italia. Gioca responsabilmente e imposta limiti di deposito e di tempo.</p></blockquote>
+<h2>Che cos&#x27;è l&#x27;App di Cazeus Casino</h2>
+<p>Facciamo subito chiarezza su cosa sia davvero la <b>Cazeus app</b>. Niente applicazione nativa pesante da scaricare, che si mangia la memoria del telefono e ti chiede aggiornamenti ogni due giorni. L&#x27;operatore ha scelto una strada più diretta: una versione web mobile ottimizzata.</p>
+<p>Il sito, in pratica, gira alla perfezione su qualsiasi browser del telefono, che tu usi Chrome, Safari o Firefox. L&#x27;interfaccia si adatta da sola allo schermo, smartphone o tablet che sia, e ti dà accesso immediato a tutto. Tradotto: niente da cercare sull&#x27;App Store o sul Google Play Store. La sensazione è quella di un&#x27;app vera, ma senza l&#x27;ingombro del download.</p>
+<h3>App nativa, web mobile o PWA: le differenze</h3>
+<p>Prima di vedere come attivarla, due parole sulla tecnologia dietro il mobile. Ti aiuta a capire perché conviene. Gli approcci al gioco su smartphone sono sostanzialmente tre:</p>
+<ul><li><b>App Nativa:</b> l&#x27;applicazione classica che scarichi dagli store (Google Play, App Store), costruita per un sistema operativo preciso. Pro: notifiche push e uso pieno dell&#x27;hardware. Contro: occupa spazio, va aggiornata a mano e non tutti gli operatori se ne fanno una.</li><li><b>Versione Web Mobile:</b> il sito del casinò aperto dal browser. Con il design &quot;responsive&quot; si adatta a ogni schermo. La più universale del gruppo: nessuna installazione, funziona ovunque.</li><li><b>PWA (Progressive Web App):</b> il compromesso tra i due. Ci accedi dal browser come a un sito, ma puoi aggiungere l&#x27;icona alla home screen e avviarlo con un tocco, senza rubare spazio alla memoria.</li></ul>
+<p>La versione mobile di Cazeus segue proprio questa filosofia: accesso via browser, comodità di un&#x27;app, zero download.</p>
+<div class="ctaBox"><div>Cazeus: bonus di benvenuto fino a <b>500 € + 200 giri gratis</b> sul casinò.</div><a class="btn" href="https://api.cazeus-casino.it.com/login">Vai al sito</a></div><h2>Come aggiungere Cazeus alla schermata Home</h2>
+<p>Non c&#x27;è nessun file `.apk`, nessuna app da installare. Eppure l&#x27;icona sulla schermata principale puoi averla lo stesso, per aprire tutto con un dito. Ci metti meno di un minuto.</p>
+<p><b>Per utenti Android:</b></p>
+<p>1.  Apri il browser Chrome (o quello che usi di solito) sullo smartphone.</p>
+<p>2.  Vai sul sito ufficiale del casinò.</p>
+<p>3.  Tocca l&#x27;icona del menu (i tre puntini verticali in alto a destra).</p>
+<p>4.  Scegli &quot;Aggiungi a schermata Home&quot;.</p>
+<p>5.  Conferma il nome da dare all&#x27;icona (es. &quot;Cazeus&quot;) e premi &quot;Aggiungi&quot;.</p>
+<p><b>Per utenti iOS (iPhone/iPad):</b></p>
+<p>1.  Apri Safari sul tuo dispositivo.</p>
+<p>2.  Naviga fino alla home page del sito.</p>
+<p>3.  Tocca l&#x27;icona &quot;Condividi&quot; (il quadrato con la freccia verso l&#x27;alto) nella barra in basso.</p>
+<p>4.  Scorri le opzioni e seleziona &quot;Aggiungi alla schermata Home&quot;.</p>
+<p>5.  Dai un nome alla scorciatoia e conferma con &quot;Aggiungi&quot;.</p>
+<p>Fatto. In pochi secondi l&#x27;icona spunta tra le altre app, pronta all&#x27;uso quando ti va di giocare.</p>
+<h2>Giochi disponibili da mobile</h2>
+<p>Qui non si scende a compromessi sull&#x27;offerta, e questo è uno dei punti forti. Tutto il catalogo desktop, migliaia di titoli, lo ritrovi anche su smartphone e tablet. L&#x27;interfaccia è pensata per il tocco, con menu chiari e filtri per pescare al volo quello che cerchi.</p>
+<p>Cosa trovi:</p>
+<ul><li><b>Slot:</b> dalle classiche da bar alle video slot più moderne, con Megaways, jackpot progressivi e opzione &quot;Bonus Buy&quot;. Ci sono titoli che spopolano come *Book of Ra Magic*, *Wolf Gold* e *Reactoonz*, tutti ottimizzati per il tuo dispositivo.</li><li><b>Giochi da Tavolo:</b> il casinò classico a portata di mano. Ti siedi ai tavoli virtuali di Blackjack, Roulette (europea, francese, americana), Baccarat e varie versioni di Poker.</li><li><b>Casino Live:</b> cerchi l&#x27;atmosfera di un vero casinò? Questa è la sezione giusta. Croupier in carne e ossa gestiscono le partite in diretta streaming HD. Ci parli, interagisci con gli altri giocatori ai tavoli di Live Blackjack, Live Roulette, game show come Crazy Time e molto altro.</li></ul>
+<h2>Bonus e promozioni esclusive per l&#x27;app</h2>
+<p>Diciamolo subito: bonus riservati solo a chi gioca da mobile non ne esistono. La buona notizia? Tutte le promozioni attive le attivi comodamente anche dal telefono. Nessuna occasione persa solo perché sei fuori casa.</p>
+<p>Direttamente dalla versione mobile puoi richiedere:</p>
+<ul><li><b>Bonus di Benvenuto Casinò:</b> un bel 100% sul primo deposito fino a 500 €, più 200 giri gratis per partire col piede giusto sulle slot.</li><li><b>Bonus di Benvenuto Sport:</b> se il tuo forte sono le scommesse, c&#x27;è un 100% sulla prima ricarica fino a 150 €.</li><li><b>Promozioni Ricorrenti:</b> la piattaforma premia chi resta, con offerte continue come il Bonus Ricarica Weekend fino a 800 € e 80 giri gratis, il Cashback Giornaliero del 15% sulle perdite al casinò, o il Cashback del 25% dedicato ai tavoli Live.</li><li><b>Programma Fedeltà:</b> giocando accumuli monete da spendere nello Shop per bonus e premi. E poi ci sono Sfide, Tornei e il VIP Club, per ricompense ancora più ghiotte.</li></ul>
+<h2>Depositi e prelievi dalla app</h2>
+<p>Gestire il conto da mobile è facile e sicuro esattamente come dal computer. La sezione &quot;Cassa&quot; è integrata alla perfezione nell&#x27;interfaccia, e depositi o prelievi li fai in pochi passaggi. Il deposito minimo parte da soli 10 €: dentro ci sta chiunque.</p>
+<p>Tra i metodi di pagamento supportati trovi:</p>
+<ul><li><b>Carte di Credito/Debito:</b> VISA e Mastercard.</li><li><b>Portafogli Elettronici (e-wallet):</b> Revolut, Skrill, Neteller, Mifinity.</li><li><b>Voucher:</b> Paysafecard (PSCD).</li><li><b>Criptovalute:</b> un&#x27;ampia scelta per chi va di transazioni decentralizzate — Bitcoin (BTC), Ethereum (ETH), Tether (USDT su più reti), Litecoin (LTC), Ripple (XRP), Solana (SOL) e molte altre.</li></ul>
+<p>I depositi sono immediati. I prelievi, invece, vengono processati rapidamente dopo la verifica del conto (KYC), obbligatoria per tenere al sicuro le transazioni.</p>
+<h2>Sicurezza, rendimento e compatibilità dei dispositivi</h2>
+<p>La logica della web app garantisce sicurezza e compatibilità a livelli alti.</p>
+<ul><li><b>Sicurezza:</b> ogni comunicazione tra il tuo telefono e i server del casinò viaggia protetta da crittografia SSL (Secure Socket Layer). Dati personali e transazioni finanziarie al sicuro, esattamente come con le app dell&#x27;home banking.</li><li><b>Rendimento:</b> la tecnologia HTML5 rende il gioco fluido e reattivo. I giochi si caricano in fretta su 4G, 5G o Wi-Fi, senza prosciugarti la batteria o mettere sotto sforzo il telefono.</li><li><b>Compatibilità:</b> qui sta il vantaggio più grosso, la compatibilità universale. La versione mobile gira su qualsiasi smartphone o tablet moderno, a prescindere dalla marca o dal sistema operativo. Che tu abbia un iPhone, un Samsung, uno Xiaomi o un altro Android qualunque, ti basta un browser aggiornato e via.</li></ul>
+<h2>Attenzione al cliente e supporto dalla app</h2>
+<p>Ti sei bloccato su qualcosa o ti è venuto un dubbio mentre giochi dal telefono? L&#x27;assistenza è sempre lì, a un tocco di distanza. Ai canali di supporto ci arrivi direttamente dall&#x27;interfaccia mobile.</p>
+<p>Di solito le opzioni sono queste:</p>
+<ul><li><b>Live Chat:</b> il modo più rapido e comodo per una risposta in tempo reale. Un operatore ti dà una mano in pochi istanti su bonus, pagamenti o dubbi sul funzionamento dei giochi.</li><li><b>Email:</b> per le cose meno urgenti o quando devi allegare documenti, scrivi al supporto via posta elettronica.</li></ul>
+<p>Il team è pronto a gestire qualsiasi richiesta, così il gioco resta tranquillo e senza intoppi pure quando sei in giro.</p>
+<h2>Domande Frequenti (FAQ)</h2>
+<p><b>Devo scaricare un&#x27;app dall&#x27;App Store o da Google Play?</b></p>
+<p>No, non serve scaricare niente. Ci accedi direttamente dal browser dello smartphone (es. Chrome o Safari). Per fare prima, aggiungi un collegamento alla schermata Home.</p>
+<p><b>Posso richiedere il bonus di benvenuto dal mio smartphone?</b></p>
+<p>Certo che sì. Tutte le promozioni, bonus di benvenuto casinò da 500 € + 200 giri gratis compreso, le richiedi e le usi senza problemi dalla versione mobile del sito.</p>
+<p><b>Quali sono i metodi di pagamento da mobile?</b></p>
+<p>La versione mobile supporta tutti i metodi della versione desktop. Depositi e prelievi con carte Visa/Mastercard, e-wallet come Revolut e Skrill, e una vasta gamma di criptovalute come Bitcoin, Ethereum e Tether (USDT).</p>
+<p><b>Giocare da mobile è sicuro?</b></p>
+<p>Sì. Si usa la crittografia SSL per proteggere dati e transazioni. In più, l&#x27;operatore applica le procedure di verifica del conto (KYC) per garantire la massima sicurezza a tutti i giocatori.</p>
+<p><b>Il mio telefono è compatibile?</b></p>
+<p>Quasi sicuramente sì. Se hai uno smartphone o un tablet moderno con un browser (Chrome, Safari, Firefox), accedi e giochi senza intoppi, sia su Android che su iOS.</p>
+  </article>
+  <div class="clusterFoot"><a href="/">Home</a><a href="/bonus/">Bonus</a><a href="/recensioni/">Recensioni</a><a href="/accesso/">Accesso</a><a href="/app/">App</a><a href="/prelievi/">Prelievi</a><a href="/verifica/">Verifica</a></div>
+</main>
+<footer>
+  <div class="fwrap">
+    <div class="comp">
+      <span class="age">18+</span>
+      <span>Il gioco è vietato ai minori di 18 anni e può causare dipendenza patologica. Gioca responsabilmente. Cazeus è un casinò internazionale non AAMS (licenza estera). Le immagini e i jackpot mostrati sono indicativi. Sito informativo indipendente — non un operatore di gioco.</span>
+    </div>
+    <nav class="cluster-foot"><a href="/">Home</a><a href="/bonus/">Bonus</a><a href="/recensioni/">Recensioni</a><a href="/accesso/">Accesso</a><a href="/app/">App</a></nav>
+    <div class="low">© 2026 Cazeus · Tutti i diritti riservati · Gioca responsabilmente</div>
+  </div>
+</footer>
+</body>
+</html>
